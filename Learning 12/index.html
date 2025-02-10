@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+       
+        /*Element Selector -->*/
+        div{
+            background-color: red;
+        }
+
+        /*Class Selector -->*/
+
+        .red{
+            background-color: red;
+        }
+    /*ID Selector -->*/
+    #green{
+        background-color: green;
+    }
+
+    /*Child Selectors -->*/
+    div > p{
+        color:blue;
+        background-color: red;
+    }
+/*Descendent Selectors -->*/
+    div p{
+        color: blue;
+        background-color: yellow;
+    }
+    /*Universal Selectors -->*/
+    *{
+        margin:0;
+        padding: 0;
+    }
+    /*Psuedo Selectors -->*/
+    a:visited{
+        color: rgb(196, 29, 222);
+    }
+    a:link{
+        color: green;
+    }
+    a:active{
+        color: red;
+    }
+
+    a:hover{
+        background-color: blue;
+    }
+     p:first-child{
+        color: rgba(112, 127, 143, 0.919);
+     }
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        <p>This is 1st child</p>
+        <p>This is 2nd child</p>
+    </div>
+    <div>
+        I am div
+    </div>
+    <div class="red">
+        I am 2nd div
+        <article>
+
+            <p> iam a child inside div</p>
+        </article>
+    </div>
+    <div id="green">
+         I am green
+         
+        </article>
+        <p> I am para in 2nd div</p>
+        <article>
+    </div>
+
+    <a href="https://www.google.com">Go to google</a>
+    <a href="https://www.facebook.com">Facebook</a>
+
+</body>
+</html>
