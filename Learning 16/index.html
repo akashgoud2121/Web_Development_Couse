@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Specificity</title>
+    <style>
+        /* The specificity of this selector is 1  */
+        h1{
+            color: red;
+            
+        }
+                /* The specificity of this selector is 1 + 10 = 11  */
+                h1.dotyellow {
+                    color: yellow;
+                }
+        
+        
+        /* The specificity of this selector is 10  */
+        .dotyellow{
+            color: yellow;
+          
+        }
+        /* The specificity of this selector is 10  */
+        .dotblue{
+            color:blue;
+            
+        }
+        /* The specificity of this selector is 10  */
+        [data-x=a]{
+            color:rgb(148, 105, 49);
+
+        }
+        a.harryclass.rohan-class[href]:hover {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="dotred dotyellow dotblue" data-x="a"">
+        This is a h1 tag
+    </h1>
+    
+</body>
+</html>
